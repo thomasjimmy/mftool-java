@@ -1,7 +1,9 @@
 package com.webencyclop.core.mftool.models.input;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.webencyclop.core.mftool.models.output.SchemeNameCodePair;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Scheme {
 
     private String schemeCode;

@@ -1,9 +1,11 @@
 package com.webencyclop.core.mftool.models.input;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Meta {
 
     @JsonProperty("fund_house")
